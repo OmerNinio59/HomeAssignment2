@@ -1,0 +1,41 @@
+:root{
+    --bg-color: black;
+    --text-color: white;
+    --accent-color:#62C757;
+    --header-footer-bg:#9E9E9E; 
+    --header-footer-text: white;
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+header, footer {
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    background-color: var(--header-footer-bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    text-align: center;
+}
+
+header {
+    top: 0;
+}
+
+footer {
+    bottom: 0;
+    height: 100px;
+}
+
+main {
+    padding: 120px 20px 120px 20px;
+}
+
