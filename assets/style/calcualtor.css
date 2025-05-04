@@ -1,0 +1,67 @@
+main {
+    background-color: var(--accent-color);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    color: var(--text-color);
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+select, input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+button[type="reset"] {
+    background-color: #444;
+    color: #fff;
+}
+
+button[type="reset"]:hover {
+    background-color: #666;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: var(--accent-color);
+    cursor: pointer;
+}
+
+button {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: var(--accent-color);
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #fF9900;
+}

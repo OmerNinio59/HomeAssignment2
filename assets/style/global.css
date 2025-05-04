@@ -1,9 +1,9 @@
 :root{
-    --bg-color: white;
-    --text-color: black;
-    --header-footer-bg:#9E9E9E; 
-    --header-footer-text: black;
-    --accent-color:rgb(217, 19, 19);
+    --bg-color: #1e1e1e;
+    --text-color: #e0e0e0;
+    --header-footer-bg:#2a2a2a; 
+    --header-footer-text: #ffffff;
+    --accent-color:#fca311;
 }
 
 
@@ -21,6 +21,8 @@ header{
     height: 100px;
     width: 100%;
     box-shadow: 0 6px 12px rgb(0, 0, 0, 15);
+    margin: 0;
+    padding: 0;
 }
 
 footer{
@@ -31,6 +33,7 @@ footer{
     height: 100px;
     width: 100%;
     box-shadow: 0 6px 12px rgb(0, 0, 0, 15);
+    margin-bottom: 0px;
 } 
 
 .navbar{
@@ -59,5 +62,5 @@ a{
 }
 
 main {
-    padding: 120px 20px 120px 20px;
+    padding-top: 100px;    
 }
