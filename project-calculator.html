@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Project Quote Calculator</title>
+  <title>Project Calculator</title>
   <link rel="stylesheet" href="assets/style/global.css">
   <link rel="stylesheet" href="assets/style/calcualtor.css">
   <script src="services/global.js" defer></script>
+  <script src="services/calculator.js" defer></script>
 </head>
 
 <body>
@@ -16,6 +17,7 @@
       <a href="about.html">About</a>
       <a href="skills.html"">Skills</a>
       <a href="project-calculator.html" class="active">Project Calculator</a>
+      <button id="toggle-dark-mode" aria-label="Toggle Dark Mode"> 🌘</button>
     </nav>
   </header>
 
@@ -30,23 +32,19 @@
         <option value="Blog">Blog</option>
       </select>
 
-      <label>
+      <label>Number of pages (1-10):</label>
         <input type="number" id="pages" min="1" max="10" required>
-        Number of pages (1-10):
-      </label>
-
-      <label>
+      
+      <label>Custom Design:</label>
         <input type="checkbox" id="custom">
-        Custom Design:
-      </label>
-    
+ 
       <div class="buttons">
         <button type="reset">Reset</button>
-        <button type="button" onclick="">Calculate Price</button>
+        <button type="button" onclick="calculatePrice()">Calculate Price</button>
       </div>
     </form>
 
-  <!-- some result here maybe add div or something else -->
+    <div id="result"></div>
   </main>
 
   <footer>

@@ -1,69 +1,105 @@
 main {
-    background-color: var(--accent-color);
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    color: var(--text-color);
-
-    padding: 150px 20px 150px;
+    margin-top: 80px;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 h1 {
-    font-size: 30px;
-    margin-bottom: 20px;
+    font-size: 25px;
+    margin-bottom: 30px;
     text-align: center;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
+    width: 100%;
+    max-width: 600px;
+    background-color: var(--header-footer-bg);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    padding: 60px;
+    border-radius: 15px;
 }
 
-label {
+form label {
     font-weight: bold;
+    font-weight: 12px;
 }
 
-select, input {
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #444;
-    background-color: #1e1e1e;
-    color: #fff;
+select, input[type="number"] {
+    padding: 15px;
+    font-size: 15px;
+    border-radius: 8px;
+    border: 3px solid #aaa;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    width: 70%;
 }
 
 .buttons {
     display: flex;
+    justify-content: center;
     gap: 15px;
 }
 
-button[type="reset"] {
-    background-color: #444;
-    color: #fff;
-}
-
-button[type="reset"]:hover {
-    background-color: #666;
-}
-
-input[type="checkbox"] {
-    width: 20px;
-    height: 20px;
-    accent-color: var(--accent-color);
-    cursor: pointer;
+form button {
+    flex: 1;
 }
 
 button {
-    padding: 15px;
+    font-size: 13px;
+    padding: 12px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     font-weight: bold;
     background-color: var(--accent-color);
-    color: #000;
+    color: var(--text-color);
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #fF9900;
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+}
+
+button[type="reset"] {
+    background-color: var(--bg-color);
+}
+
+button[type="reset"]:hover {
+    background-color: black;
+    color: var(--header-footer-bg);
+}
+
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--accent-color);
+    cursor: pointer;
+}
+
+input[type="checkbox"]:hover {
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+}
+
+#result {
+    margin-top: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--text-color);
+    opacity: 0;
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    transform: translateY(20px);
+}
+
+#result.show {
+    opacity: 1;
+    transform: translateY(0);
 }

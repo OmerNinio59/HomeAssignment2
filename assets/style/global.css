@@ -1,9 +1,19 @@
 :root{
-    --bg-color: #1e1e1e;
-    --text-color: #e0e0e0;
-    --header-footer-bg:#2a2a2a; 
-    --header-footer-text: #ffffff;
-    --accent-color:#fca311;
+    --bg-color: #e0dfdf3a;    
+    --text-color: #5b5959;
+    --header-footer-bg:#efefef; 
+    --header-footer-text: #373333bf;
+    --accent-color:#29b1c665;
+    --btn-color: #f6f5f5;
+}
+
+body.dark-mode {
+    --bg-color:#080808;
+    --text-color: #ffffff93;
+    --header-footer-bg:#101010; 
+    --header-footer-text:#514d4d6f;
+    --accent-color:#4c9511;
+    --btn-color: #f6f5f5;
 }
 
 
@@ -11,7 +21,6 @@ html, body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
-    height: 100%;
     margin: 0;
     padding: 0;
     display: flex;
@@ -28,6 +37,7 @@ header{
     box-shadow: 0 6px 12px rgb(0, 0, 0, 15);
     margin-top: 0px;
     padding: 0;
+    background-color: var(--header-footer-bg);
 }
 
 footer{
@@ -46,20 +56,36 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--header-footer-bg);
     gap: 50px;
     width: 100%;
     height: 100px;
-    font-size: 23px;
+    font-size: 20px;
 }
 
 .navbar a {
     border-radius: 80px;
     padding: 10px 20px;
-    background-color: grey;
     transition: all 0.5s ease;
     letter-spacing: 1.3px;
     box-shadow: 0 4px 6px rgb(0, 0, 0, 0.3);
+}
+
+.navbar button#toggle-dark-mode {
+    background: none;
+    border: 2px solid;
+    border-radius: 70px;
+    font-size: 23px;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: var(--header-footer-text);
+    box-shadow: 0 4px 6px rgb(0, 0, 0, 0.5);
+}
+
+
+
+.navbar button#toggle-dark-mode:hover {
+    transform: scale(1.2);
+    transition: all 0.5s ease;
 }
 
 a {
@@ -71,7 +97,8 @@ a {
 
 a:hover {
     box-shadow: 0 4px 10px rgb(0, 0, 0, 0.5);
-    color: crimson;
+    color: var(--accent-color);
+    transform: scale(1.2);
 }
 
 .active {
