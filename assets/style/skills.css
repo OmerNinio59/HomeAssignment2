@@ -4,18 +4,20 @@ main section {
     padding: 20px;
     line-height: 1.5;
     color: var(--text-color);
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 main h1 {
-    font-size: 30px;
+    font-size: var(--h1-size);
     margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 main h2 {
-    font-size: 22px;
+    font-size: var(--h2-size);
     margin-top: 30px;
     margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 main ul {
@@ -25,7 +27,7 @@ main ul {
 
 main li {
     margin-bottom: 10px;
-    font-size: 15px;
+    font-size: var(--li-a-p-input-h3-size);
 }
 
 main p {

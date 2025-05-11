@@ -8,7 +8,7 @@ main {
 }
 
 h1 {
-    font-size: 25px;
+    font-size: var(--h1-size);
     margin-bottom: 30px;
     text-align: center;
 }
@@ -32,7 +32,7 @@ form label {
 
 select, input[type="number"] {
     padding: 15px;
-    font-size: 15px;
+    font-size: var(--li-a-p-input-h3-size);
     border-radius: 8px;
     border: 3px solid #aaa;
     background-color: var(--bg-color);
@@ -51,7 +51,7 @@ form button {
 }
 
 button {
-    font-size: 13px;
+    font-size: var(--btn-size);
     padding: 12px 20px;
     border: none;
     border-radius: 8px;
@@ -68,11 +68,7 @@ button:hover {
 }
 
 button[type="reset"] {
-    background-color: var(--bg-color);
-}
-
-button[type="reset"]:hover {
-    background-color: black;
+    background-color: var(--text-color);
     color: var(--header-footer-bg);
 }
 
@@ -90,7 +86,7 @@ input[type="checkbox"]:hover {
 
 #result {
     margin-top: 50px;
-    font-size: 25px;
+    font-size: var(--result-size);
     font-weight: bold;
     text-align: center;
     color: var(--text-color);

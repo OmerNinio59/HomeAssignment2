@@ -16,3 +16,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+function showBurgerbar() {
+    const burger = document.querySelector(".burgerBar")
+    burger.style.display = 'flex' 
+}
+
+function hideBurgerbar() {
+    const burger = document.querySelector(".burgerBar")
+    burger.style.display = 'none' 
+}
