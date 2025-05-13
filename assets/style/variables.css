@@ -1,4 +1,26 @@
-/* variables.css */
-:root {
-  --primary-color: #ffffff;
+:root{
+    --bg-color: #e0dfdf3a;    
+    --text-color: #5b5959;
+    --header-footer-bg:#efefef; 
+    --header-footer-text: #373333bf;
+    --accent-color:#29b1c665;
+    --btn-color: #f6f5f5;
+
+    --h1-size: 30px;
+    --h2-size: 22px;
+    --li-a-p-input-h3-size: 15px;
+    --btn-size: 13px;
+    --result-size: 25px;
+    --mainHead-size: 50px;
+    --mainP-size: 20px;
+    --DKbtn-size: 23px;
+}
+
+body.dark-mode {
+    --bg-color:#080808;
+    --text-color: #ffffff93;
+    --header-footer-bg:#101010; 
+    --header-footer-text:#514d4d6f;
+    --accent-color:#4c9511;
+    --btn-color: #f6f5f5;
 }

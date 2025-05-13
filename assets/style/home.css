@@ -96,7 +96,9 @@ h3 {
 }
 
 .cta-img {
-    width: 20px;
-    vertical-align: middle;
-    margin-right: 10px;
+    width: 300px;
+    height: 190px;
+    border-radius: 50px;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }

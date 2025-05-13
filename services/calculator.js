@@ -17,13 +17,13 @@ function calculatePrice() {
             basePrice = 1000;
             break;
 
-            case "Online Store":
-                basePrice = 2000;
-                break;
+        case "Online Store":
+            basePrice = 2000;
+            break;
 
-                case "Blog":
-                    basePrice = 1500;
-                    break;
+        case "Blog":
+            basePrice = 1500;
+            break;
     }
 
     const extraPages = pages > 1 ? (pages - 1) * 200 : 0;
